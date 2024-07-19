@@ -1,6 +1,7 @@
 # Block Banter 🗣️🦜
 
-Block Banter is a simple full stack app built in Go that fetches ERC20 transfer event data and visualises it in a directed graph in the browser.
+Block Banter is a simple full stack app built in Go that fetches ERC20 transfer event data and visualises it in a
+directed graph in the browser.
 
 ## Prerequisites
 
@@ -19,7 +20,12 @@ docker-compose up
 
 Open your browser and navigate to `http://localhost:9000` to view the graph.
 
-Note: it might take some time for your PostgreSQL table to fill up with data but once there are a few blocks worth of data ingested the graph starts to look interesting.
+Note: it might take some time for your PostgreSQL table to fill up with data but once there are a few blocks worth of
+data ingested the graph starts to look interesting.
+
+### Demo
+
+[![Watch the video](https://raw.githubusercontent.com/silentFred/block-banter/main/thumbnail.png)](https://raw.githubusercontent.com/silentFred/block-banter/main/block-banter-ui-demo.mp4)
 
 ### Usage
 
