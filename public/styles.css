@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    background-color: #2c2c3e;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: #f0f0f0;
+}
+
+.link {
+    stroke: #ff6f61;
+    stroke-opacity: 0.6;
+}
+
+.node {
+    fill: #6b5b95;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    cursor: pointer;
+}
+
+svg {
+    flex-grow: 1;
+    background-color: #1e1e2f;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: #4a4e69;
+    color: #f0f0f0;
+    border: 0px;
+    border-radius: 4px;
+    pointer-events: none;
+}
