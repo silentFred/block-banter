@@ -1,6 +1,3 @@
-// TODO how to deal with multiple transactions between the same addresses?
-// TODO how to deal with strange re-rendering force that is pushing nodes away from the center?
-
 let currentNodesCount = 0;
 let simulation, container, svg;
 let nodesArray = [], linksArray = [];
