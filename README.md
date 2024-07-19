@@ -27,7 +27,7 @@ Once the project is running, you can access the API to generate and retrieve pro
 
 ### Contributing
 
-I'm learning how to build Rust projects, so any feedback is appreciated. Contributions are welcome too so please open an
+I'm learning how to build Go projects, so any feedback is appreciated. Contributions are welcome too so please open an
 issue or submit a pull request for any improvements or bug fixes.
 
 ### License
