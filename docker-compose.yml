@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  block-banter:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - RUN_ENV=docker
+      - DB_HOST=postgres
+      - DB_USER=test
+      - DB_PASSWORD=test
+      - DB_NAME=banter
+      - CHAINSTACK_API_KEY=${CHAINSTACK_API_KEY}
+    ports:
+      - "9000:9000"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=banter
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
